@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -name "*.gif" -exec ls -l {} + | sort -k5rn 
+find . -type f -iname "*.gif" -printf "%f\n" -o -type d -printf "%f/\n" | sort -f | while read file; do name=${file%.*}; ls -l --block-size=1 "$file"; done | sort -k5rn | cut -d ' ' -f 9
