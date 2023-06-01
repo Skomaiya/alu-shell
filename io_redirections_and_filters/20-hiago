@@ -1,0 +1,2 @@
+#!/bin/bash
+input_str = "Hello World" output_str = ''.join([i for i in input_str if i not in 'cC']) print(output_str)
