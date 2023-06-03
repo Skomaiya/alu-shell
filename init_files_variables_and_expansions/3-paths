@@ -1,2 +1,2 @@
 #!/bin/bash
-alias count='find /PATH -type d | wc -l
+echo $PATH | tr ':' '\n' | grep -c'^/'
