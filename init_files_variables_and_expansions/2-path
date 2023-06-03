@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo mv /action /usr/local/bin/ 
+export PATH=$PATH:/action
