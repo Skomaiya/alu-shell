@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo mv /action $PATH
+sudo mv /action /usr/local/bin/ 
