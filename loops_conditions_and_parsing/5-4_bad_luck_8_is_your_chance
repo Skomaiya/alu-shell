@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #This loops through text and prints different text on line 4 and 8
 i=1
-while [ $i -lt 10 ]
+while [ $i -lt 11 ]
  do 
     if [ $i -eq 4 ]
     then
