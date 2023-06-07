@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+#This loop prints time from 0:00 to 12:59
+i=0
+while [ $i -le 100 ]
+do
+    case $i in
+        0) echo "Hour :0";;
+        60) echo "Hour :1";;
+        120) echo "Hour :2";;
+        *) echo "Hour : $i";;
+    esac
+
+    i=$((i+1))
+done
