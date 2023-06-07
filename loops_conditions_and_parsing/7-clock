@@ -11,4 +11,3 @@ while [ $hours -lt 13 ]; do
     (( minutes=1 ))
     (( hours+=1 ))
 done
-This is the answer
