@@ -7,15 +7,19 @@ do
     case $i in
         4)
 		echo "4"
-	       	echo "4 bad luck from China";;
+	       	echo "4 bad luck from China"
+		;;
         9)
 	       echo "9"
-		echo "9 bad luck from Japan";;
+		echo "9 bad luck from Japan"
+		;;
         17)
 	       echo "17"
-		echo "17 bad luck from Italy";;
+		echo "17 bad luck from Italy"
+		;;
         *)
-	       	echo $i;;
+	       	echo $i
+		;;
     esac
 
     i=$((i+1))
