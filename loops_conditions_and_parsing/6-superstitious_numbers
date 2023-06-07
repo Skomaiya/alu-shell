@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#This loops and prints multiplr text on new line but different text on line 4.9,17.
+i=1
+
+while [ $i -le 20 ]
+do
+    case $i in
+        4) echo "4 bad luck from China";;
+        9) echo "9 bad luck from Japan";;
+        17) echo "17 bad luck from Italy";;
+        *) echo $i;;
+    esac
+
+    i=$((i+1))
+done
