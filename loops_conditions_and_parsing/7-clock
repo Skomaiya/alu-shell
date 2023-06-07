@@ -1,18 +1,14 @@
 #!/usr/bin/env bash
 #This loop prints from 0:00 to 12:59
-hour=0
-
-while [ $hour -le 12 ]
-do
-    minute=1
-
-    while [ $minute -le 59 ]
-    do
-        printf "%02d:%02d\n" $hour $minute
-
-        minute=$((minute+1))
+minutes=1
+hours=0
+while [ $hours -lt 13 ]; do
+    echo Hour: $hours
+    while [ $minutes -lt 60 ]; do
+        echo $minutes
+        (( minutes+=1 ))
     done
-
-    hour=$((hour+1))
-done | head -n 70
-
+    (( minutes=1 ))
+    (( hours+=1 ))
+done
+This is the answer
