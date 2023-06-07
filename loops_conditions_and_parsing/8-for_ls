@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#this loop prints all files in the directory
+for file in *; do
+    if [[ -f "$file" && ${file:0:1} != "." ]]; then
+        echo "${file#*-}"
+    fi
+done
