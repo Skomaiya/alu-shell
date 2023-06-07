@@ -7,7 +7,7 @@ do
         0) echo "Hour :0";;
         60) echo "Hour :1";;
         120) echo "Hour :2";;
-        *) echo "Hour : $i";;
+        *) echo  $i;;
     esac
 
     i=$((i+1))
