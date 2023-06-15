@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#This script dispays the current process PID
+ps
